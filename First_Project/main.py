@@ -1,3 +1,6 @@
 # Jackson Hauley computer programming first project
 
-print("this is just a test")
+import random
+
+num = random.randint(1,20)
+print("this is just a test", num)
