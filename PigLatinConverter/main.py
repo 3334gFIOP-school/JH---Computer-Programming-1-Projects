@@ -15,8 +15,9 @@ def convert(pig):
                 break
         else:
             output = pig + "ay"
-    
     return output
 
 # Testing
-print(convert(input("What do you want to convert?: ")))
+word = input('What do you want to convert?: ')
+print(word,"is the input, in pig latin it is")
+print(convert(word))
