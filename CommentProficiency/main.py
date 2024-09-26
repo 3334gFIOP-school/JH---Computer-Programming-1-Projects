@@ -1,7 +1,7 @@
 # Jackson Hauley - Comments Proficiency
 
-class BankAccount:
-    def __init__(self, account_number, balance=0):
+class BankAccount: # Setting up the class
+    def __init__(self, account_number, balance=0): # Initializing the variables and other crap
         self.account_number = account_number
         self.balance = balance
 
