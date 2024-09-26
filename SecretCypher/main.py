@@ -3,7 +3,7 @@
 # Declaring alphabet string
 alphabetString = "abcdefghijklmnopqrstuvwxyz"
 
-# Defining function
+# Defining functions
 def encode(secret):
     secret = secret.lower()
     secretlist = list(secret)
