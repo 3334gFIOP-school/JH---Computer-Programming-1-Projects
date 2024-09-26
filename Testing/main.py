@@ -1,7 +1,4 @@
 # Jackson's testing zone
 
-num1 = 0
-
-for x in range(1000):
-    print (num1)
-    num1 += 1
+for i in range(1, 5):
+    print(i)
