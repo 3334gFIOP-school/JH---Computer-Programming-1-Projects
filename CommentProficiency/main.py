@@ -70,4 +70,4 @@ def main(): # This is the interface that asks you what you want to do
             print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
-    main() # Start the loop and run it at the beggening
+    main() # Start the loop and run it at the begenning
