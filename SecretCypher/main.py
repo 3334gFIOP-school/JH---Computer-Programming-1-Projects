@@ -37,9 +37,11 @@ def ask():
     if "encode" in decide:
         sentence = input("What sentence do you want to encode?: ")
         print("Encoded sentence:", encode(sentence))
+        ask()
     elif "decode" in decide:
         sentence = input("What sentence do you want to decode?: ")
         print("Decoded sentence:", decode(sentence))
+        ask()
     else:
         print('That is not a choice! Type either "encode" or "decode"!') 
         ask()
