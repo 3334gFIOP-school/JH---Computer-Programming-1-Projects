@@ -23,8 +23,12 @@ def make_dollar(num):
 def start():
     print("\nNumber Format Converter\n================================")
     print("1. insert commas every 3 digits\n2. add an amount of decimals\n3. turn a number into a percentage\n4. turn a number into money format")
-    selection = int(input("What action do you want to choose?(1-4): "))
-    elif selection == 1:
+    try:
+        selection = int(input("What action do you want to choose?(1-4): "))
+    except ValueError:
+        print("Invalid input!")
+        start()
+    if selection == 1:
         num = insert_commas(int(input("What number do you want to add commas too?: ")))
         print(f"\nYour number with commas added is {num}")
         start()
@@ -33,7 +37,7 @@ def start():
         print(f"\nYour number with decimals added is {num}")
         start()
     elif selection == 3:
-        num = make_percentage(int(input("What number do you want to turn into a percentage?: ")))
+        num = make_percentage(int(input("How many decimal places do you want the percatages to go?: ")),int(input("What number do you want to make a percentage?: ")))
         print(f"\nYour number as a percantage is {num}")
         start()
     elif selection == 4:
