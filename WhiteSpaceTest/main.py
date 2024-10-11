@@ -41,6 +41,7 @@ def face_challenge():
         print("You fail to overcome the challenge.")
         return False
 
+# Game Structure
 def play_game():
     display_intro()
     treasure_found=False
@@ -66,4 +67,5 @@ def play_game():
     if treasure_found:print("Congratulations! You've won the game!")
 
 # Startup
-if __name__=="__main__":play_game()
+if __name__=="__main__":
+    play_game()
